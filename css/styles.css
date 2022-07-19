@@ -12,7 +12,7 @@ a :hover{
     color: rgb(240, 203, 203);  
 }
 ul{
-     display: flex;
+    display: flex;
     justify-content: center;
     display: inline-block;
 }
@@ -66,8 +66,8 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .button__nav{
-    background: rgb(248, 198, 86);
-    border:2px solid rgb(248, 198, 86) ;
+    background: rgb(29, 61, 220);
+    border:2px solid rgb(29, 61, 220) ;
     text-decoration: none;
     color: #fff;
     padding: 5px 10px;
