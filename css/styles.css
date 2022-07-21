@@ -307,8 +307,13 @@ input[type="submit"] {
 .text__p{
     font-family: 'Poppins', sans-serif;
 }
+/* ----------------------------------------------------------------------------------------------------------------------------*/
 
-
+.row{
+    padding: 10vh;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
 
 
 
