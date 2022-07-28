@@ -1,0 +1,335 @@
+*{                  
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #fff;  
+}
+a :hover{
+    text-decoration: none;
+    color: rgb(240, 203, 203);  
+}
+ul{
+    display: flex;
+    justify-content: center;
+}
+li{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+h3{
+    color: rgb(186, 184, 184);
+    font-family: 'Poppins', sans-serif;
+}
+.h3__banner{
+    text-align: center;
+    color: rgb(103, 103, 103);
+}
+p{
+    padding:17px;
+    color: rgb(186, 184, 184);
+}
+
+body{
+    background-color: rgb(48, 68, 78);
+}
+/* ----------------------------------------------------------------------------------------------------------------------------*/
+
+.navbar__header {
+    display: grid;
+    margin: 10px;
+    padding: 10px;
+    color: #fff;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.imagen{
+    width: 200px;
+    object-fit: contain;
+}
+
+.nav-enlace{
+    background: transparent;
+    /* border:2px solid rgb(248, 198, 86) ; */
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.button__nav{
+    background: rgb(29, 61, 220);
+    border:2px solid rgb(29, 61, 220) ;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.toggle-btn{
+    width: 35px;
+    position: absolute;
+    right: 80px;
+    top: 40px;
+    display: none;
+}
+.toggle-btn span{
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    float: left;
+    margin-bottom: 8px;
+}
+@media (max-width: 1200px){  /*desktop*/
+
+}
+@media (max-width: 992px){  /*portatiles*/
+
+}
+@media (max-width: 768px){  /*tablet*/
+
+} 
+@media (max-width: 576px){  /*mobile*/
+    .toggle-btn{
+        display: block;
+    }
+    nav{
+        display: none;
+        width: 100%;
+        border-top: 1px solid #fff;
+        padding-top: 20px;
+        margin-top: 30px;
+    }
+    .button__nav{
+        padding: 15px 0px;
+        width: 100%;
+    }
+    .nav.show{
+        display: block;
+    }
+}
+/* ----------------------------------------------------------------------------------------------------------------------------*/
+
+.banner-section{    /* Estilo del la sección banner */
+    background-color: rgba(34, 52, 60, 0.69);
+    padding: 5px;
+
+    &__section-divisor{
+        padding: 50px;
+        text-align: center;
+
+        &__title-banner{
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 25px;
+        text-align: center;
+    }
+    }
+    
+}
+
+.div__h2{
+padding: 20px;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------*/
+
+.class__section-divisor{    /* Estilo del sección card aplica para la sección imprenta digital como productos destacados*/
+    background-color: rgb(182, 180, 180);
+    padding: 10px;
+    margin: 5px 0px ;
+}
+.cards{     
+    
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-top: 20px; 
+    display: inline-flex;
+    text-align: center;
+    background-color: rgb(48,68,78);
+    gap: 70px;
+
+    &__perfil{
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 8px;
+        width: 15%;
+        background-color: white;
+
+            &hover {
+                box-shadow: 0 8px 16px 0 white;
+            }
+    }
+    &__img{
+        width: 100%;
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    
+    &title-card{
+        padding: 2px 16px;
+        color: black;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+    }
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------*/
+                                        /* Estilo del la sección forms o formulario*/
+.forms-section{     
+    background-color: rgb(172, 172, 172);
+}
+.forms{
+    padding: 5px;
+}
+.forms__button{
+    padding: 10px 100px;
+}
+.logo__foorm{
+    text-align: center;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------*/
+                                        /* footer */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+footer {
+    background-color: rgb(29, 61, 220);
+    background-color: #555;
+    color: #bbb;
+    line-height: 1.5;
+}
+footer a {
+    text-decoration: none;
+    color: #eee;
+}
+
+
+.container { 
+    flex: 1;
+}
+.ft-main {
+    background-color: rgba(0, 175, 239, 0.896);
+    font-family: 'Poppins', sans-serif;
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+        &-item {
+            padding: 1.25rem;
+            min-width: 12.5rem;
+
+            &-title {
+                color: #fff;
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.375rem;
+                padding-bottom: 0.625rem;
+
+                    &hover {
+                        text-decoration: underline;
+                    }
+            }
+            
+        }
+}
+
+
+
+input[type="email"] {
+    font-family: 'Poppins', sans-serif;
+    border: 0;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+}
+input[type="submit"] {
+    font-family: 'Poppins', sans-serif;
+    background-color: #00d188;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    padding: 0.625rem 0.9375rem;
+    margin-top: 0.3125rem;
+}
+.ft-social-list li {
+    margin: 0.5rem;
+    font-size: 1.25rem;
+}
+/* Footer legal */
+.ft-legal {
+    font-family: 'Poppins', sans-serif;
+    padding: 0.9375rem 1.875rem;
+    background-color: #333;
+
+        .ft-legal-list {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            color: white;
+
+            
+                .ft-legal-list li {
+                    margin: 0.125rem 0.625rem;
+                    white-space: nowrap;
+                }
+        }
+
+}
+
+
+
+.ft-legal-list li:nth-last-child(2) {
+    flex: 1;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------*/
+
+.img__Agenda{     /* Estilo del la sección footer */
+    width: 15%;
+    height: 10%;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------*/
+
+.somos{ /* Estilo del la sección Nosotros */
+    padding: 40px;
+    text-align: center;
+    font-size: 30px;
+}
+.banner__servicio{
+    padding: 40px;
+    text-align: center;
+}
+.subtitle{
+    font-size: 30px;
+    padding: 40px;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------*/
+
+/* Estilo del la sección nuestro servicios */
+.img__serv{
+    width: 15%;
+}
+.te_esperamos{
+    padding: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+.text__p{
+    font-family: 'Poppins', sans-serif;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------*/
+
+.row{
+    padding: 10vh;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
