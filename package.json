@@ -1,0 +1,23 @@
+{
+  "name": "coder-house",
+  "version": "1.0.0",
+  "description": "<h1>Imprimi Ya- Proyecto de Coder House</h1>\r <p>Este es un sitio de una imprenta que brinda ciertos productos como agendas personalizadas, todo tipo de impresiones y poder asesorar al cliente</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PabloSuizer/imprimi-ya.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PabloSuizer/imprimi-ya/issues"
+  },
+  "homepage": "https://github.com/PabloSuizer/imprimi-ya#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
