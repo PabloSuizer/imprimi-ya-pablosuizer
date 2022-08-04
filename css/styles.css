@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* LETRA */
+/*  TAMAÑO LETRA */
 * {
   margin: 0px;
   padding: 0px;
@@ -160,6 +162,25 @@ body {
     color: black;
     font-family: 'Poppins', sans-serif;
     font-size: 15px; }
+
+/* MAP */
+.card__base, .card-agenda-docente, .card-agenda-perpetua, .card-agenda {
+  justify-content: center;
+  display: inline-flex;
+  text-align: center; }
+
+.card-agenda-docente {
+  background-image: url("../resources/agenda docente.jpg"); }
+
+.card-agenda-perpetua {
+  background-image: url("../resources/Agenda.png"); }
+
+.card-agenda {
+  background-image: url("../resources/Img Agenda.png"); }
+
+h1 {
+  font-family: Poppins;
+  font-size: 2rem; }
 
 /* ----------------------------------------------------------------------------------------------------------------------------*/
 /* Estilo del la sección forms o formulario*/

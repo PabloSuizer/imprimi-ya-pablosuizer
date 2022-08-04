@@ -186,8 +186,32 @@ padding: 20px;
         font-size: 15px;
     }
 }
+/* MAP */
+$card:(
+    agenda-docente: url('../resources/agenda\ docente.jpg'),
+    agenda-perpetua: url('../resources/Agenda.png'),
+    agenda: url('../resources/Img\ Agenda.png')
+);
 
+.card__base{
+    justify-content: center;
+    display: inline-flex;
+    text-align: center;
+}
 
+@each $name, $url in $card {
+    .card-#{$name} {
+        @extend .card__base;
+        background-image: #{$url};
+    }
+}
+@mixin titulos ( $font-family, $font-size){
+    font-family: $font-family;
+    font-size: $font-size;
+}
+h1{
+    @include titulos(Poppins, $titulos)
+}
 /* ----------------------------------------------------------------------------------------------------------------------------*/
                                         /* Estilo del la sección forms o formulario*/
 .forms-section{     
@@ -317,6 +341,7 @@ input[type="submit"] {
     font-size: 30px;
     padding: 40px;
 }
+
 /* ----------------------------------------------------------------------------------------------------------------------------*/
 
 /* Estilo del la sección nuestro servicios */
