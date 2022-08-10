@@ -1,7 +1,14 @@
+
+@import "variables";
+@import "operators";
 @import "footer";
 @import "nav";
-@import "operators";
-@import "variables";
+@import"boostrap";
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
 
 *{                  
     margin: 0px;
@@ -10,7 +17,7 @@
 }
 a{
     text-decoration: none;
-    color: #fff;  
+    color:red;  
 }
 a :hover{
     text-decoration: none;
@@ -24,18 +31,15 @@ li{
     display: flex;
     justify-content: center;
 }
-h2{
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-}
-h3{
-    color: rgb(186, 184, 184);
-    font-family: 'Poppins', sans-serif;
-}
-.h3__banner{
-    text-align: center;
-    color: rgb(103, 103, 103);
-}
+
+// h3{
+//     color: rgb(186, 184, 184);
+//     font-family: 'Poppins', sans-serif;
+// }
+// .h3__banner{
+//     text-align: center;
+//     color: rgb(103, 103, 103);
+// }
 p{
     padding:17px;
     color: rgb(186, 184, 184);
@@ -45,55 +49,30 @@ body{
     background-color: rgb(48, 68, 78);
 }
 /* ----------------------------------------------------------------------------------------------------------------------------*/
-
-.navbar__header {
-    display: grid;
-    margin: 10px;
-    padding: 10px;
-    color: #fff;   
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.somos{ /* Estilo del la sección Nosotros */
+    padding: 40px;
+    text-align: center;
+    font-size: 30px;
 }
-.imagen{
-    width: 200px;
-    object-fit: contain;
+.banner__servicio{
+    padding: 40px;
+    text-align: center;
 }
-
-.nav-enlace{
-    background: transparent;
-    /* border:2px solid rgb(248, 198, 86) ; */
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 10px;
+.subtitle{
+    font-size: 30px;
+    padding: 40px;
+}
+.class__section-divisor{
     font-family: 'Poppins', sans-serif;
+    text-align: center;
+
+    &__title-banner{
+        color: red;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+    }
 }
-.button__nav{
-    background: rgb(29, 61, 220);
-    border:2px solid rgb(29, 61, 220) ;
-    text-decoration: none;
-    color: #fff;
-    padding: 5px 10px;
-    margin: 10px;
-    border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-}
-.toggle-btn{
-    width: 35px;
-    position: absolute;
-    right: 80px;
-    top: 40px;
-    display: none;
-}
-.toggle-btn span{
-    display: inline-block;
-    width: 100%;
-    height: 2px;
-    background-color: #fff;
-    float: left;
-    margin-bottom: 8px;
-}
+
 @media (max-width: 1200px){  /*desktop*/
 
 }
@@ -103,44 +82,8 @@ body{
 @media (max-width: 768px){  /*tablet*/
 
 } 
-@media (max-width: 576px){  /*mobile*/
-    .toggle-btn{
-        display: block;
-    }
-    nav{
-        display: none;
-        width: 100%;
-        border-top: 1px solid #fff;
-        padding-top: 20px;
-        margin-top: 30px;
-    }
-    .button__nav{
-        padding: 15px 0px;
-        width: 100%;
-    }
-    .nav.show{
-        display: block;
-    }
-}
 /* ----------------------------------------------------------------------------------------------------------------------------*/
 
-.banner-section{    /* Estilo del la sección banner */
-    background-color: rgba(34, 52, 60, 0.69);
-    padding: 5px;
-
-    &__section-divisor{
-        padding: 50px;
-        text-align: center;
-
-        &__title-banner{
-        color: #fff;
-        font-family: 'Poppins', sans-serif;
-        font-size: 25px;
-        text-align: center;
-    }
-    }
-    
-}
 
 .div__h2{
 padding: 20px;
@@ -173,13 +116,13 @@ padding: 20px;
                 box-shadow: 0 8px 16px 0 white;
             }
     }
-    &__img{
+    &-img{
         width: 100%;
         border-radius: 8px 8px 0px 0px;
     }
 
     
-    &title-card{
+    &-title{
         padding: 2px 16px;
         color: black;
         font-family: 'Poppins', sans-serif;
@@ -228,10 +171,7 @@ h1{
 }
 /* ----------------------------------------------------------------------------------------------------------------------------*/
                                         /* footer */
-ul {
-    list-style: none;
-    padding-left: 0;
-}
+
 footer {
     background-color: rgb(29, 61, 220);
     background-color: #555;
@@ -243,10 +183,6 @@ footer a {
     color: #eee;
 }
 
-
-.container { 
-    flex: 1;
-}
 .ft-main {
     background-color: rgba(0, 175, 239, 0.896);
     font-family: 'Poppins', sans-serif;
@@ -327,21 +263,6 @@ input[type="submit"] {
     height: 10%;
 }
 /* ----------------------------------------------------------------------------------------------------------------------------*/
-
-.somos{ /* Estilo del la sección Nosotros */
-    padding: 40px;
-    text-align: center;
-    font-size: 30px;
-}
-.banner__servicio{
-    padding: 40px;
-    text-align: center;
-}
-.subtitle{
-    font-size: 30px;
-    padding: 40px;
-}
-
 /* ----------------------------------------------------------------------------------------------------------------------------*/
 
 /* Estilo del la sección nuestro servicios */
@@ -363,3 +284,5 @@ input[type="submit"] {
     font-family: 'Poppins', sans-serif;
     color: #fff;
 }
+
+/* ----------------------------------------------------------------------------------------------------------------------------*/
