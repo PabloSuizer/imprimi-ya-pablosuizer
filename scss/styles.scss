@@ -6,10 +6,6 @@
 @import"boostrap";
 
 
-@import "../node_modules/bootstrap/scss/bootstrap";
-
-
-
 *{                  
     margin: 0px;
     padding: 0px;
@@ -102,7 +98,7 @@ padding: 20px;
     padding-top: 20px; 
     display: inline-flex;
     text-align: center;
-    background-color: rgb(48,68,78);
+    background-color: rgb(253, 253, 253);
     gap: 70px;
 
     &__perfil{
@@ -110,7 +106,7 @@ padding: 20px;
         transition: 0.3s;
         border-radius: 8px;
         width: 15%;
-        background-color: white;
+        background-color: black;
 
             &hover {
                 box-shadow: 0 8px 16px 0 white;
@@ -251,11 +247,6 @@ input[type="submit"] {
 
 }
 
-
-
-.ft-legal-list li:nth-last-child(2) {
-    flex: 1;
-}
 /* ----------------------------------------------------------------------------------------------------------------------------*/
 
 .img__Agenda{     /* Estilo del la sección footer */
@@ -282,7 +273,13 @@ input[type="submit"] {
 .row{
     padding: 10vh;
     font-family: 'Poppins', sans-serif;
-    color: #fff;
+    color: black;
+
+    &_footer{
+        padding: 10vh;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+    }
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------*/
