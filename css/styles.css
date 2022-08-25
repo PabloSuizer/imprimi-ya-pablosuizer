@@ -201,6 +201,12 @@ body {
   padding: 10px;
   margin: 5px 0px; }
 
+.card-img {
+  height: 350px; }
+
+.card-body {
+  height: 150px; }
+
 .cards {
   justify-content: center;
   margin-bottom: 20px;
