@@ -204,8 +204,11 @@ body {
 .card-img {
   height: 350px; }
 
-.card-body {
+.card-body-style {
   height: 150px; }
+
+.card-product {
+  height: 250px; }
 
 .cards {
   justify-content: center;
